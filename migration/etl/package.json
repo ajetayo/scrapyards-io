@@ -1,0 +1,24 @@
+{
+  "name": "@workspace/migration",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "etl": "tsx ./src/run-etl.ts",
+    "import-staging": "tsx ./src/import-staging.ts",
+    "validate": "tsx ./src/validate.ts",
+    "redirects": "tsx ./src/redirects.ts",
+    "check-redirect-depth": "tsx ./src/check-redirect-depth.ts",
+    "all": "pnpm etl && pnpm import-staging && pnpm validate && pnpm redirects",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/pg": "^8.18.0",
+    "tsx": "catalog:"
+  }
+}

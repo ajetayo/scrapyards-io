@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Scrapyards.io"
+version = "1.0.0"
+id = "artifacts/scrapyards"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/", "/api/calculator", "/api/cron" ]
+localPort = 22232
+
+[services.development]
+run = "pnpm --filter @workspace/scrapyards run dev"
+
+[services.development.env]
+PORT = "22232"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/scrapyards", "run", "build" ]
+
+[services.production.run]
+args = [ "pnpm", "--filter", "@workspace/scrapyards", "run", "start" ]
+
+[services.production.run.env]
+PORT = "22232"
+NODE_ENV = "production"

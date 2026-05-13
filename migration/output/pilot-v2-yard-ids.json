@@ -1,0 +1,202 @@
+[
+  {
+    "yard_id": 236,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 3509,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 4029,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 6551,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 2491,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 5729,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 1707,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 4393,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 6205,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 5001,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 6195,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 7052,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 4463,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 6844,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 5088,
+    "cohort": "flagged-similar"
+  },
+  {
+    "yard_id": 5123,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4847,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 252,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6121,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2311,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5668,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2259,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4776,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2717,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2021,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5904,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4841,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2389,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4630,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 126,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6749,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 6784,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 7509,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 7675,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 6214,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 2622,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 7241,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 1338,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 2262,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 339,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 2226,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2121,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2215,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2569,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 3242,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 6991,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2708,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2223,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 180,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 4961,
+    "cohort": "specialized-name"
+  }
+]

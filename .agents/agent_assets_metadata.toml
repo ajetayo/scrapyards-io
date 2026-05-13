@@ -1,0 +1,44 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "z38eLYMdDaazroalFRpAn"
+uri = "file://screenshots/01-home.jpg"
+type = "image"
+title = "(a) Homepage"
+
+[[outputs]]
+id = "qYitX4h5sWCkgIyJd7hxt"
+uri = "file://screenshots/03-pennsylvania.jpg"
+type = "image"
+title = "(c) /scrap-yards/pennsylvania/ — 239 cities"
+
+[[outputs]]
+id = "iF2_Ojq78T9idnNFTKu1w"
+uri = "file://screenshots/04-yard.jpg"
+type = "image"
+title = "(d) McGhee Scrap Co — top-traffic yard"
+
+[[outputs]]
+id = "F1UqIcE5RRKUtTGXbLOfS"
+uri = "file://screenshots/05-copper.jpg"
+type = "image"
+title = "(e) Copper grade page — 4 grades + per-state table"
+
+[[outputs]]
+id = "Dp4LthQECEyqUfVI7X8VS"
+uri = "file://screenshots/06-yard-after-hours-fix.jpg"
+type = "image"
+title = "McGhee Scrap Co — hours fix (no Closed badge, raw hours rendered cleanly)"
+
+[[outputs]]
+id = "EEjjcqf7M8B-aGiRhhyW2"
+uri = "file://screenshots/07-copper-with-prices.jpg"
+type = "image"
+title = "Copper grade page — prices restored from snapshot"
+
+[[outputs]]
+id = "Nz2h3EXpvKDF1j9SAIsmp"
+uri = "file://scrapyards-backup.tar.gz"
+type = "unspecified"
+title = "scrapyards-backup.tar.gz (5.3 MB — contains .dump + .sql)"

@@ -1,0 +1,2029 @@
+{
+  "scope": {
+    "dump_file": "wp-dump.sql",
+    "table_prefix": "80TdVe_",
+    "total_posts": 13082,
+    "posts_byType": {
+      "attachment": 783,
+      "nav_menu_item": 38,
+      "product": 4,
+      "listingpro_agent": 1,
+      "custom_css": 5,
+      "page": 60,
+      "wp_global_styles": 1,
+      "wpforms": 20,
+      "listing": 3090,
+      "adstxt": 1,
+      "simple-pay": 2,
+      "lp-reviews": 5,
+      "lp-claims": 5,
+      "oembed_cache": 17,
+      "wpi_item": 4,
+      "elementor_library": 1,
+      "revision": 470,
+      "wpi_payment_form": 1,
+      "wpi_invoice": 10,
+      "wp_navigation": 1,
+      "wp_block": 15,
+      "wpcode": 2,
+      "gd_place": 8296,
+      "post": 5,
+      "metal": 245
+    }
+  },
+  "yards_real_data": {
+    "source": "post_type='gd_place' + geodir_gd_place_detail",
+    "gd_place_total": 8296,
+    "gd_place_byStatus": {
+      "publish": 8296
+    },
+    "place_detail_total": 11572,
+    "real_publish_yards_in_pd": 8296,
+    "real_yards_with_matching_post": 8296,
+    "real_yards_orphan_in_pd": 0,
+    "states_covered": 51,
+    "real_yards_with_images": 0,
+    "real_yards_with_business_hours": 5997,
+    "real_yards_with_business_hours_inline_pd": 5997,
+    "real_yards_with_business_hours_standalone_table": 0,
+    "real_yards_by_state": [
+      [
+        "Texas",
+        651
+      ],
+      [
+        "California",
+        552
+      ],
+      [
+        "Pennsylvania",
+        494
+      ],
+      [
+        "Florida",
+        487
+      ],
+      [
+        "Ohio",
+        470
+      ],
+      [
+        "Michigan",
+        424
+      ],
+      [
+        "Louisiana",
+        416
+      ],
+      [
+        "Illinois",
+        370
+      ],
+      [
+        "New York",
+        306
+      ],
+      [
+        "North Carolina",
+        266
+      ],
+      [
+        "Georgia",
+        254
+      ],
+      [
+        "Indiana",
+        228
+      ],
+      [
+        "Wisconsin",
+        222
+      ],
+      [
+        "Tennessee",
+        219
+      ],
+      [
+        "New Jersey",
+        187
+      ],
+      [
+        "Alabama",
+        173
+      ],
+      [
+        "Missouri",
+        173
+      ],
+      [
+        "Iowa",
+        153
+      ],
+      [
+        "Massachusetts",
+        152
+      ],
+      [
+        "Virginia",
+        149
+      ],
+      [
+        "Kentucky",
+        137
+      ],
+      [
+        "Minnesota",
+        135
+      ],
+      [
+        "South Carolina",
+        122
+      ],
+      [
+        "Arizona",
+        119
+      ],
+      [
+        "Washington",
+        117
+      ],
+      [
+        "Oklahoma",
+        112
+      ],
+      [
+        "Colorado",
+        109
+      ],
+      [
+        "Kansas",
+        97
+      ],
+      [
+        "Maryland",
+        95
+      ],
+      [
+        "Arkansas",
+        89
+      ],
+      [
+        "Mississippi",
+        87
+      ],
+      [
+        "Oregon",
+        78
+      ],
+      [
+        "Connecticut",
+        78
+      ],
+      [
+        "Utah",
+        68
+      ],
+      [
+        "Nebraska",
+        68
+      ],
+      [
+        "Maine",
+        55
+      ],
+      [
+        "New Mexico",
+        48
+      ],
+      [
+        "West Virginia",
+        43
+      ],
+      [
+        "New Hampshire",
+        40
+      ],
+      [
+        "Idaho",
+        33
+      ],
+      [
+        "Nevada",
+        32
+      ],
+      [
+        "Rhode Island",
+        28
+      ],
+      [
+        "North Dakota",
+        26
+      ],
+      [
+        "Montana",
+        25
+      ],
+      [
+        "South Dakota",
+        19
+      ],
+      [
+        "Hawaii",
+        18
+      ],
+      [
+        "Vermont",
+        18
+      ],
+      [
+        "Wyoming",
+        18
+      ],
+      [
+        "Delaware",
+        17
+      ],
+      [
+        "Alaska",
+        17
+      ],
+      [
+        "DC",
+        2
+      ]
+    ]
+  },
+  "field_completeness_on_real_yards": {
+    "post_title": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "street": {
+      "filled": 7683,
+      "pct": "92.6"
+    },
+    "city": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "region": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "country": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "zip": {
+      "filled": 7993,
+      "pct": "96.3"
+    },
+    "latitude": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "longitude": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "phone": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "email": {
+      "filled": 3898,
+      "pct": "47.0"
+    },
+    "website": {
+      "filled": 4736,
+      "pct": "57.1"
+    },
+    "facebook": {
+      "filled": 0,
+      "pct": "0.0"
+    },
+    "twitter": {
+      "filled": 0,
+      "pct": "0.0"
+    },
+    "video": {
+      "filled": 0,
+      "pct": "0.0"
+    },
+    "special_offers": {
+      "filled": 0,
+      "pct": "0.0"
+    },
+    "business_hours": {
+      "filled": 5997,
+      "pct": "72.3"
+    },
+    "post_category": {
+      "filled": 8296,
+      "pct": "100.0"
+    },
+    "default_category": {
+      "filled": 7046,
+      "pct": "84.9"
+    }
+  },
+  "categories": {
+    "gd_placecategory_terms_total": 75,
+    "gd_place_posts_with_at_least_one_category": 7046,
+    "top_categories_used_by_real_yards_postCategoryCSV": [
+      {
+        "tid": "2572",
+        "n": 6948,
+        "term": {
+          "name": "Scrap Metals",
+          "slug": "scrap-metals",
+          "taxonomy": "gd_placecategory",
+          "count": "7045"
+        }
+      },
+      {
+        "tid": "2600",
+        "n": 3382,
+        "term": {
+          "name": "Recycling Centers",
+          "slug": "recycling-centers",
+          "taxonomy": "gd_placecategory",
+          "count": "3457"
+        }
+      },
+      {
+        "tid": "2601",
+        "n": 1762,
+        "term": {
+          "name": "Surplus &amp; Salvage Merchandise",
+          "slug": "surplus-salvage-merchandise",
+          "taxonomy": "gd_placecategory",
+          "count": "1747"
+        }
+      },
+      {
+        "tid": "2587",
+        "n": 1445,
+        "term": {
+          "name": "Metals",
+          "slug": "metals",
+          "taxonomy": "gd_placecategory",
+          "count": "1545"
+        }
+      },
+      {
+        "tid": "2573",
+        "n": 1267,
+        "term": {
+          "name": "Scrap Metals-Wholesale",
+          "slug": "scrap-metals-wholesale",
+          "taxonomy": "gd_placecategory",
+          "count": "1260"
+        }
+      },
+      {
+        "tid": "2669",
+        "n": 777,
+        "term": {
+          "name": "Junk Dealers",
+          "slug": "junk-dealers",
+          "taxonomy": "gd_placecategory",
+          "count": "817"
+        }
+      },
+      {
+        "tid": "2672",
+        "n": 768,
+        "term": {
+          "name": "Automobile Salvage",
+          "slug": "automobile-salvage",
+          "taxonomy": "gd_placecategory",
+          "count": "969"
+        }
+      },
+      {
+        "tid": "3684",
+        "n": 751,
+        "term": null
+      },
+      {
+        "tid": "2575",
+        "n": 680,
+        "term": {
+          "name": "Aluminum",
+          "slug": "aluminum",
+          "taxonomy": "gd_placecategory",
+          "count": "749"
+        }
+      },
+      {
+        "tid": "2582",
+        "n": 589,
+        "term": {
+          "name": "Copper",
+          "slug": "copper",
+          "taxonomy": "gd_placecategory",
+          "count": "656"
+        }
+      },
+      {
+        "tid": "2718",
+        "n": 570,
+        "term": {
+          "name": "Recycling Equipment &amp; Services",
+          "slug": "recycling-equipment-services",
+          "taxonomy": "gd_placecategory",
+          "count": "619"
+        }
+      },
+      {
+        "tid": "2577",
+        "n": 438,
+        "term": {
+          "name": "Brass",
+          "slug": "brass",
+          "taxonomy": "gd_placecategory",
+          "count": "497"
+        }
+      },
+      {
+        "tid": "2596",
+        "n": 436,
+        "term": {
+          "name": "Smelters &amp; Refiners-Precious Metals",
+          "slug": "smelters-refiners-precious-metals",
+          "taxonomy": "gd_placecategory",
+          "count": "495"
+        }
+      },
+      {
+        "tid": "2583",
+        "n": 405,
+        "term": {
+          "name": "Lead",
+          "slug": "lead",
+          "taxonomy": "gd_placecategory",
+          "count": "458"
+        }
+      },
+      {
+        "tid": "2834",
+        "n": 405,
+        "term": {
+          "name": "Automobile Parts &amp; Supplies",
+          "slug": "automobile-parts-supplies",
+          "taxonomy": "gd_placecategory",
+          "count": "526"
+        }
+      },
+      {
+        "tid": "2694",
+        "n": 404,
+        "term": {
+          "name": "Used &amp; Rebuilt Auto Parts",
+          "slug": "used-rebuilt-auto-parts",
+          "taxonomy": "gd_placecategory",
+          "count": "510"
+        }
+      },
+      {
+        "tid": "2578",
+        "n": 403,
+        "term": {
+          "name": "Bronze",
+          "slug": "bronze",
+          "taxonomy": "gd_placecategory",
+          "count": "454"
+        }
+      },
+      {
+        "tid": "2593",
+        "n": 400,
+        "term": {
+          "name": "Professional Engineers",
+          "slug": "professional-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "449"
+        }
+      },
+      {
+        "tid": "2580",
+        "n": 399,
+        "term": {
+          "name": "Construction Engineers",
+          "slug": "construction-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "448"
+        }
+      },
+      {
+        "tid": "2597",
+        "n": 399,
+        "term": {
+          "name": "Structural Engineers",
+          "slug": "structural-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "448"
+        }
+      },
+      {
+        "tid": "2676",
+        "n": 335,
+        "term": {
+          "name": "Steel Distributors &amp; Warehouses",
+          "slug": "steel-distributors-warehouses",
+          "taxonomy": "gd_placecategory",
+          "count": "323"
+        }
+      },
+      {
+        "tid": "2671",
+        "n": 298,
+        "term": {
+          "name": "Waste Recycling &amp; Disposal Service &amp; Equipment",
+          "slug": "waste-recycling-disposal-service-equipment",
+          "taxonomy": "gd_placecategory",
+          "count": "270"
+        }
+      },
+      {
+        "tid": "2755",
+        "n": 276,
+        "term": {
+          "name": "Steel Processing",
+          "slug": "steel-processing",
+          "taxonomy": "gd_placecategory",
+          "count": "308"
+        }
+      },
+      {
+        "tid": "3686",
+        "n": 275,
+        "term": null
+      },
+      {
+        "tid": "2869",
+        "n": 271,
+        "term": {
+          "name": "Automobile Parts &amp; Supplies-Used &amp; Rebuilt-Wholesale &amp; Manufacturers",
+          "slug": "automobile-parts-supplies-used-rebuilt-wholesale-manufacturers",
+          "taxonomy": "gd_placecategory",
+          "count": "339"
+        }
+      }
+    ],
+    "top_categories_via_term_relationships": [
+      {
+        "tid": "2572",
+        "n": 7045,
+        "term": {
+          "name": "Scrap Metals",
+          "slug": "scrap-metals",
+          "taxonomy": "gd_placecategory",
+          "count": "7045"
+        }
+      },
+      {
+        "tid": "2600",
+        "n": 3457,
+        "term": {
+          "name": "Recycling Centers",
+          "slug": "recycling-centers",
+          "taxonomy": "gd_placecategory",
+          "count": "3457"
+        }
+      },
+      {
+        "tid": "2601",
+        "n": 1747,
+        "term": {
+          "name": "Surplus &amp; Salvage Merchandise",
+          "slug": "surplus-salvage-merchandise",
+          "taxonomy": "gd_placecategory",
+          "count": "1747"
+        }
+      },
+      {
+        "tid": "2587",
+        "n": 1545,
+        "term": {
+          "name": "Metals",
+          "slug": "metals",
+          "taxonomy": "gd_placecategory",
+          "count": "1545"
+        }
+      },
+      {
+        "tid": "2573",
+        "n": 1260,
+        "term": {
+          "name": "Scrap Metals-Wholesale",
+          "slug": "scrap-metals-wholesale",
+          "taxonomy": "gd_placecategory",
+          "count": "1260"
+        }
+      },
+      {
+        "tid": "2672",
+        "n": 969,
+        "term": {
+          "name": "Automobile Salvage",
+          "slug": "automobile-salvage",
+          "taxonomy": "gd_placecategory",
+          "count": "969"
+        }
+      },
+      {
+        "tid": "2669",
+        "n": 817,
+        "term": {
+          "name": "Junk Dealers",
+          "slug": "junk-dealers",
+          "taxonomy": "gd_placecategory",
+          "count": "817"
+        }
+      },
+      {
+        "tid": "2575",
+        "n": 749,
+        "term": {
+          "name": "Aluminum",
+          "slug": "aluminum",
+          "taxonomy": "gd_placecategory",
+          "count": "749"
+        }
+      },
+      {
+        "tid": "2582",
+        "n": 656,
+        "term": {
+          "name": "Copper",
+          "slug": "copper",
+          "taxonomy": "gd_placecategory",
+          "count": "656"
+        }
+      },
+      {
+        "tid": "2718",
+        "n": 619,
+        "term": {
+          "name": "Recycling Equipment &amp; Services",
+          "slug": "recycling-equipment-services",
+          "taxonomy": "gd_placecategory",
+          "count": "619"
+        }
+      },
+      {
+        "tid": "2834",
+        "n": 526,
+        "term": {
+          "name": "Automobile Parts &amp; Supplies",
+          "slug": "automobile-parts-supplies",
+          "taxonomy": "gd_placecategory",
+          "count": "526"
+        }
+      },
+      {
+        "tid": "2694",
+        "n": 510,
+        "term": {
+          "name": "Used &amp; Rebuilt Auto Parts",
+          "slug": "used-rebuilt-auto-parts",
+          "taxonomy": "gd_placecategory",
+          "count": "510"
+        }
+      },
+      {
+        "tid": "2577",
+        "n": 497,
+        "term": {
+          "name": "Brass",
+          "slug": "brass",
+          "taxonomy": "gd_placecategory",
+          "count": "497"
+        }
+      },
+      {
+        "tid": "2596",
+        "n": 495,
+        "term": {
+          "name": "Smelters &amp; Refiners-Precious Metals",
+          "slug": "smelters-refiners-precious-metals",
+          "taxonomy": "gd_placecategory",
+          "count": "495"
+        }
+      },
+      {
+        "tid": "2583",
+        "n": 458,
+        "term": {
+          "name": "Lead",
+          "slug": "lead",
+          "taxonomy": "gd_placecategory",
+          "count": "458"
+        }
+      },
+      {
+        "tid": "2578",
+        "n": 454,
+        "term": {
+          "name": "Bronze",
+          "slug": "bronze",
+          "taxonomy": "gd_placecategory",
+          "count": "454"
+        }
+      },
+      {
+        "tid": "2593",
+        "n": 449,
+        "term": {
+          "name": "Professional Engineers",
+          "slug": "professional-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "449"
+        }
+      },
+      {
+        "tid": "2580",
+        "n": 448,
+        "term": {
+          "name": "Construction Engineers",
+          "slug": "construction-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "448"
+        }
+      },
+      {
+        "tid": "2597",
+        "n": 448,
+        "term": {
+          "name": "Structural Engineers",
+          "slug": "structural-engineers",
+          "taxonomy": "gd_placecategory",
+          "count": "448"
+        }
+      },
+      {
+        "tid": "2869",
+        "n": 339,
+        "term": {
+          "name": "Automobile Parts &amp; Supplies-Used &amp; Rebuilt-Wholesale &amp; Manufacturers",
+          "slug": "automobile-parts-supplies-used-rebuilt-wholesale-manufacturers",
+          "taxonomy": "gd_placecategory",
+          "count": "339"
+        }
+      },
+      {
+        "tid": "2676",
+        "n": 323,
+        "term": {
+          "name": "Steel Distributors &amp; Warehouses",
+          "slug": "steel-distributors-warehouses",
+          "taxonomy": "gd_placecategory",
+          "count": "323"
+        }
+      },
+      {
+        "tid": "2755",
+        "n": 308,
+        "term": {
+          "name": "Steel Processing",
+          "slug": "steel-processing",
+          "taxonomy": "gd_placecategory",
+          "count": "308"
+        }
+      },
+      {
+        "tid": "2840",
+        "n": 298,
+        "term": {
+          "name": "Truck Wrecking",
+          "slug": "truck-wrecking",
+          "taxonomy": "gd_placecategory",
+          "count": "298"
+        }
+      },
+      {
+        "tid": "2671",
+        "n": 270,
+        "term": {
+          "name": "Waste Recycling &amp; Disposal Service &amp; Equipment",
+          "slug": "waste-recycling-disposal-service-equipment",
+          "taxonomy": "gd_placecategory",
+          "count": "270"
+        }
+      },
+      {
+        "tid": "2730",
+        "n": 260,
+        "term": {
+          "name": "Garbage Collection",
+          "slug": "garbage-collection",
+          "taxonomy": "gd_placecategory",
+          "count": "260"
+        }
+      }
+    ],
+    "all_gd_placecategory_terms": [
+      {
+        "ttId": "2572",
+        "name": "Scrap Metals",
+        "slug": "scrap-metals",
+        "taxonomy": "gd_placecategory",
+        "count": "7045"
+      },
+      {
+        "ttId": "2600",
+        "name": "Recycling Centers",
+        "slug": "recycling-centers",
+        "taxonomy": "gd_placecategory",
+        "count": "3457"
+      },
+      {
+        "ttId": "2601",
+        "name": "Surplus &amp; Salvage Merchandise",
+        "slug": "surplus-salvage-merchandise",
+        "taxonomy": "gd_placecategory",
+        "count": "1747"
+      },
+      {
+        "ttId": "2587",
+        "name": "Metals",
+        "slug": "metals",
+        "taxonomy": "gd_placecategory",
+        "count": "1545"
+      },
+      {
+        "ttId": "2573",
+        "name": "Scrap Metals-Wholesale",
+        "slug": "scrap-metals-wholesale",
+        "taxonomy": "gd_placecategory",
+        "count": "1260"
+      },
+      {
+        "ttId": "2672",
+        "name": "Automobile Salvage",
+        "slug": "automobile-salvage",
+        "taxonomy": "gd_placecategory",
+        "count": "969"
+      },
+      {
+        "ttId": "2669",
+        "name": "Junk Dealers",
+        "slug": "junk-dealers",
+        "taxonomy": "gd_placecategory",
+        "count": "817"
+      },
+      {
+        "ttId": "2575",
+        "name": "Aluminum",
+        "slug": "aluminum",
+        "taxonomy": "gd_placecategory",
+        "count": "749"
+      },
+      {
+        "ttId": "2582",
+        "name": "Copper",
+        "slug": "copper",
+        "taxonomy": "gd_placecategory",
+        "count": "656"
+      },
+      {
+        "ttId": "2718",
+        "name": "Recycling Equipment &amp; Services",
+        "slug": "recycling-equipment-services",
+        "taxonomy": "gd_placecategory",
+        "count": "619"
+      },
+      {
+        "ttId": "2834",
+        "name": "Automobile Parts &amp; Supplies",
+        "slug": "automobile-parts-supplies",
+        "taxonomy": "gd_placecategory",
+        "count": "526"
+      },
+      {
+        "ttId": "2694",
+        "name": "Used &amp; Rebuilt Auto Parts",
+        "slug": "used-rebuilt-auto-parts",
+        "taxonomy": "gd_placecategory",
+        "count": "510"
+      },
+      {
+        "ttId": "2577",
+        "name": "Brass",
+        "slug": "brass",
+        "taxonomy": "gd_placecategory",
+        "count": "497"
+      },
+      {
+        "ttId": "2596",
+        "name": "Smelters &amp; Refiners-Precious Metals",
+        "slug": "smelters-refiners-precious-metals",
+        "taxonomy": "gd_placecategory",
+        "count": "495"
+      },
+      {
+        "ttId": "2583",
+        "name": "Lead",
+        "slug": "lead",
+        "taxonomy": "gd_placecategory",
+        "count": "458"
+      },
+      {
+        "ttId": "2578",
+        "name": "Bronze",
+        "slug": "bronze",
+        "taxonomy": "gd_placecategory",
+        "count": "454"
+      },
+      {
+        "ttId": "2593",
+        "name": "Professional Engineers",
+        "slug": "professional-engineers",
+        "taxonomy": "gd_placecategory",
+        "count": "449"
+      },
+      {
+        "ttId": "2580",
+        "name": "Construction Engineers",
+        "slug": "construction-engineers",
+        "taxonomy": "gd_placecategory",
+        "count": "448"
+      },
+      {
+        "ttId": "2597",
+        "name": "Structural Engineers",
+        "slug": "structural-engineers",
+        "taxonomy": "gd_placecategory",
+        "count": "448"
+      },
+      {
+        "ttId": "2869",
+        "name": "Automobile Parts &amp; Supplies-Used &amp; Rebuilt-Wholesale &amp; Manufacturers",
+        "slug": "automobile-parts-supplies-used-rebuilt-wholesale-manufacturers",
+        "taxonomy": "gd_placecategory",
+        "count": "339"
+      },
+      {
+        "ttId": "2676",
+        "name": "Steel Distributors &amp; Warehouses",
+        "slug": "steel-distributors-warehouses",
+        "taxonomy": "gd_placecategory",
+        "count": "323"
+      },
+      {
+        "ttId": "2755",
+        "name": "Steel Processing",
+        "slug": "steel-processing",
+        "taxonomy": "gd_placecategory",
+        "count": "308"
+      },
+      {
+        "ttId": "2840",
+        "name": "Truck Wrecking",
+        "slug": "truck-wrecking",
+        "taxonomy": "gd_placecategory",
+        "count": "298"
+      },
+      {
+        "ttId": "2671",
+        "name": "Waste Recycling &amp; Disposal Service &amp; Equipment",
+        "slug": "waste-recycling-disposal-service-equipment",
+        "taxonomy": "gd_placecategory",
+        "count": "270"
+      },
+      {
+        "ttId": "2730",
+        "name": "Garbage Collection",
+        "slug": "garbage-collection",
+        "taxonomy": "gd_placecategory",
+        "count": "260"
+      },
+      {
+        "ttId": "2719",
+        "name": "Demolition Contractors",
+        "slug": "demolition-contractors",
+        "taxonomy": "gd_placecategory",
+        "count": "245"
+      },
+      {
+        "ttId": "2685",
+        "name": "Metal Specialties",
+        "slug": "metal-specialties",
+        "taxonomy": "gd_placecategory",
+        "count": "242"
+      },
+      {
+        "ttId": "2884",
+        "name": "Automobile Accessories",
+        "slug": "automobile-accessories",
+        "taxonomy": "gd_placecategory",
+        "count": "212"
+      },
+      {
+        "ttId": "2686",
+        "name": "Metal-Wholesale &amp; Manufacturers",
+        "slug": "metal-wholesale-manufacturers",
+        "taxonomy": "gd_placecategory",
+        "count": "201"
+      },
+      {
+        "ttId": "2793",
+        "name": "Steel Erectors",
+        "slug": "steel-erectors",
+        "taxonomy": "gd_placecategory",
+        "count": "180"
+      },
+      {
+        "ttId": "2791",
+        "name": "Metal Tubing",
+        "slug": "metal-tubing",
+        "taxonomy": "gd_placecategory",
+        "count": "170"
+      },
+      {
+        "ttId": "2723",
+        "name": "Rubbish &amp; Garbage Removal &amp; Containers",
+        "slug": "rubbish-garbage-removal-containers",
+        "taxonomy": "gd_placecategory",
+        "count": "168"
+      },
+      {
+        "ttId": "2872",
+        "name": "Steel Fabricators",
+        "slug": "steel-fabricators",
+        "taxonomy": "gd_placecategory",
+        "count": "166"
+      },
+      {
+        "ttId": "2790",
+        "name": "Metal Tanks",
+        "slug": "metal-tanks",
+        "taxonomy": "gd_placecategory",
+        "count": "161"
+      },
+      {
+        "ttId": "2670",
+        "name": "Computer &amp; Electronics Recycling",
+        "slug": "computer-electronics-recycling",
+        "taxonomy": "gd_placecategory",
+        "count": "147"
+      },
+      {
+        "ttId": "2753",
+        "name": "Garbage &amp; Rubbish Removal Contractors Equipment",
+        "slug": "garbage-rubbish-removal-contractors-equipment",
+        "taxonomy": "gd_placecategory",
+        "count": "146"
+      },
+      {
+        "ttId": "2833",
+        "name": "Rubbish Removal",
+        "slug": "rubbish-removal",
+        "taxonomy": "gd_placecategory",
+        "count": "146"
+      },
+      {
+        "ttId": "2725",
+        "name": "Trash Hauling",
+        "slug": "trash-hauling",
+        "taxonomy": "gd_placecategory",
+        "count": "139"
+      },
+      {
+        "ttId": "2691",
+        "name": "Steel Used",
+        "slug": "steel-used",
+        "taxonomy": "gd_placecategory",
+        "count": "93"
+      },
+      {
+        "ttId": "2724",
+        "name": "Trash Containers &amp; Dumpsters",
+        "slug": "trash-containers-dumpsters",
+        "taxonomy": "gd_placecategory",
+        "count": "86"
+      },
+      {
+        "ttId": "2693",
+        "name": "Used Car Dealers",
+        "slug": "used-car-dealers",
+        "taxonomy": "gd_placecategory",
+        "count": "81"
+      },
+      {
+        "ttId": "2792",
+        "name": "Sheet Metal Work",
+        "slug": "sheet-metal-work",
+        "taxonomy": "gd_placecategory",
+        "count": "63"
+      },
+      {
+        "ttId": "2838",
+        "name": "Iron Work",
+        "slug": "iron-work",
+        "taxonomy": "gd_placecategory",
+        "count": "55"
+      },
+      {
+        "ttId": "2637",
+        "name": "Gold",
+        "slug": "gold",
+        "taxonomy": "gd_placecategory",
+        "count": "53"
+      },
+      {
+        "ttId": "2638",
+        "name": "Silver &amp; Platinum Buyers &amp; Dealers",
+        "slug": "silver-platinum-buyers-dealers",
+        "taxonomy": "gd_placecategory",
+        "count": "53"
+      },
+      {
+        "ttId": "2683",
+        "name": "Iron",
+        "slug": "iron",
+        "taxonomy": "gd_placecategory",
+        "count": "52"
+      },
+      {
+        "ttId": "3339",
+        "name": "Truck Equipment &amp; Parts",
+        "slug": "truck-equipment-parts",
+        "taxonomy": "gd_placecategory",
+        "count": "49"
+      },
+      {
+        "ttId": "2871",
+        "name": "Pipe",
+        "slug": "pipe",
+        "taxonomy": "gd_placecategory",
+        "count": "48"
+      },
+      {
+        "ttId": "2916",
+        "name": "Auto Body Parts",
+        "slug": "auto-body-parts",
+        "taxonomy": "gd_placecategory",
+        "count": "45"
+      },
+      {
+        "ttId": "2604",
+        "name": "Building Materials",
+        "slug": "building-materials",
+        "taxonomy": "gd_placecategory",
+        "count": "41"
+      },
+      {
+        "ttId": "2623",
+        "name": "Strip",
+        "slug": "strip",
+        "taxonomy": "gd_placecategory",
+        "count": "40"
+      },
+      {
+        "ttId": "2681",
+        "name": "Copper Products",
+        "slug": "copper-products",
+        "taxonomy": "gd_placecategory",
+        "count": "40"
+      },
+      {
+        "ttId": "2747",
+        "name": "Containers",
+        "slug": "containers",
+        "taxonomy": "gd_placecategory",
+        "count": "36"
+      },
+      {
+        "ttId": "2808",
+        "name": "Trucking",
+        "slug": "trucking",
+        "taxonomy": "gd_placecategory",
+        "count": "36"
+      },
+      {
+        "ttId": "2744",
+        "name": "Plastics-Scrap",
+        "slug": "plastics-scrap",
+        "taxonomy": "gd_placecategory",
+        "count": "35"
+      },
+      {
+        "ttId": "2866",
+        "name": "Construction &amp; Building Equipment",
+        "slug": "construction-building-equipment",
+        "taxonomy": "gd_placecategory",
+        "count": "35"
+      },
+      {
+        "ttId": "2726",
+        "name": "Waste Paper",
+        "slug": "waste-paper",
+        "taxonomy": "gd_placecategory",
+        "count": "34"
+      },
+      {
+        "ttId": "2645",
+        "name": "Precious Metals",
+        "slug": "precious-metals",
+        "taxonomy": "gd_placecategory",
+        "count": "28"
+      },
+      {
+        "ttId": "2631",
+        "name": "Jewelers",
+        "slug": "jewelers",
+        "taxonomy": "gd_placecategory",
+        "count": "27"
+      },
+      {
+        "ttId": "2678",
+        "name": "Aluminum Products",
+        "slug": "aluminum-products",
+        "taxonomy": "gd_placecategory",
+        "count": "27"
+      },
+      {
+        "ttId": "3333",
+        "name": "Automobile Parts",
+        "slug": "automobile-parts",
+        "taxonomy": "gd_placecategory",
+        "count": "27"
+      },
+      {
+        "ttId": "3021",
+        "name": "Base Metals",
+        "slug": "base-metals",
+        "taxonomy": "gd_placecategory",
+        "count": "23"
+      },
+      {
+        "ttId": "2636",
+        "name": "Collectibles",
+        "slug": "collectibles",
+        "taxonomy": "gd_placecategory",
+        "count": "20"
+      },
+      {
+        "ttId": "3213",
+        "name": "Electric Equipment &amp; Supplies",
+        "slug": "electric-equipment-supplies",
+        "taxonomy": "gd_placecategory",
+        "count": "16"
+      },
+      {
+        "ttId": "2677",
+        "name": "Alloys",
+        "slug": "alloys",
+        "taxonomy": "gd_placecategory",
+        "count": "15"
+      },
+      {
+        "ttId": "2818",
+        "name": "Garbage Disposals",
+        "slug": "garbage-disposals",
+        "taxonomy": "gd_placecategory",
+        "count": "15"
+      },
+      {
+        "ttId": "2737",
+        "name": "Wood Products",
+        "slug": "wood-products",
+        "taxonomy": "gd_placecategory",
+        "count": "14"
+      },
+      {
+        "ttId": "2590",
+        "name": "Plastics",
+        "slug": "plastics",
+        "taxonomy": "gd_placecategory",
+        "count": "13"
+      },
+      {
+        "ttId": "2786",
+        "name": "Cabinets",
+        "slug": "cabinets",
+        "taxonomy": "gd_placecategory",
+        "count": "12"
+      },
+      {
+        "ttId": "2816",
+        "name": "Dump Truck Service",
+        "slug": "dump-truck-service",
+        "taxonomy": "gd_placecategory",
+        "count": "12"
+      },
+      {
+        "ttId": "2740",
+        "name": "Farm Equipment",
+        "slug": "farm-equipment",
+        "taxonomy": "gd_placecategory",
+        "count": "10"
+      },
+      {
+        "ttId": "2862",
+        "name": "Wrecker Service Equipment",
+        "slug": "wrecker-service-equipment",
+        "taxonomy": "gd_placecategory",
+        "count": "10"
+      },
+      {
+        "ttId": "3013",
+        "name": "Cranes",
+        "slug": "cranes",
+        "taxonomy": "gd_placecategory",
+        "count": "10"
+      },
+      {
+        "ttId": "2820",
+        "name": "Major Appliances",
+        "slug": "major-appliances",
+        "taxonomy": "gd_placecategory",
+        "count": "9"
+      },
+      {
+        "ttId": "2857",
+        "name": "Machinery Movers &amp; Erectors",
+        "slug": "machinery-movers-erectors",
+        "taxonomy": "gd_placecategory",
+        "count": "9"
+      }
+    ]
+  },
+  "locations": {
+    "geodir_post_locations_rows": 5119,
+    "distinct_state_slugs": 51,
+    "distinct_city_slugs": 5119,
+    "weird_state_slugs_with_numeric_suffix": [
+      "delaware-2",
+      "indiana-1",
+      "kansas-1",
+      "michigan-1",
+      "nevada-2",
+      "north-dakota-1",
+      "south-dakota-1",
+      "virginia-2",
+      "washington-7"
+    ],
+    "state_slug_distribution": [
+      [
+        "pennsylvania",
+        310
+      ],
+      [
+        "texas",
+        310
+      ],
+      [
+        "california",
+        239
+      ],
+      [
+        "illinois",
+        215
+      ],
+      [
+        "michigan-1",
+        201
+      ],
+      [
+        "new-york",
+        199
+      ],
+      [
+        "ohio",
+        192
+      ],
+      [
+        "florida",
+        160
+      ],
+      [
+        "kansas-1",
+        158
+      ],
+      [
+        "north-carolina",
+        148
+      ],
+      [
+        "wisconsin",
+        142
+      ],
+      [
+        "missouri",
+        139
+      ],
+      [
+        "georgia",
+        136
+      ],
+      [
+        "iowa",
+        134
+      ],
+      [
+        "minnesota",
+        134
+      ],
+      [
+        "indiana-1",
+        134
+      ],
+      [
+        "virginia-2",
+        121
+      ],
+      [
+        "tennessee",
+        120
+      ],
+      [
+        "new-jersey",
+        119
+      ],
+      [
+        "colorado",
+        110
+      ],
+      [
+        "kentucky",
+        109
+      ],
+      [
+        "nebraska",
+        105
+      ],
+      [
+        "alabama",
+        100
+      ],
+      [
+        "massachusetts",
+        96
+      ],
+      [
+        "south-dakota-1",
+        95
+      ],
+      [
+        "oklahoma",
+        85
+      ],
+      [
+        "north-dakota-1",
+        84
+      ],
+      [
+        "south-carolina",
+        80
+      ],
+      [
+        "mississippi",
+        76
+      ],
+      [
+        "washington-7",
+        76
+      ],
+      [
+        "louisiana",
+        73
+      ],
+      [
+        "arkansas",
+        72
+      ],
+      [
+        "maryland",
+        68
+      ],
+      [
+        "oregon",
+        54
+      ],
+      [
+        "maine",
+        54
+      ],
+      [
+        "connecticut",
+        52
+      ],
+      [
+        "montana",
+        51
+      ],
+      [
+        "utah",
+        50
+      ],
+      [
+        "west-virginia",
+        45
+      ],
+      [
+        "arizona",
+        43
+      ],
+      [
+        "new-hampshire",
+        43
+      ],
+      [
+        "idaho",
+        41
+      ],
+      [
+        "vermont",
+        33
+      ],
+      [
+        "new-mexico",
+        29
+      ],
+      [
+        "wyoming",
+        26
+      ],
+      [
+        "nevada-2",
+        17
+      ],
+      [
+        "rhode-island",
+        14
+      ],
+      [
+        "delaware-2",
+        13
+      ],
+      [
+        "alaska",
+        7
+      ],
+      [
+        "hawaii",
+        6
+      ],
+      [
+        "dc",
+        1
+      ]
+    ]
+  },
+  "slugs": {
+    "duplicate_slugs_in_gd_place": 0,
+    "sample_dupes": [],
+    "gd_place_slugs_with_numeric_suffix": 1310
+  },
+  "metals_post_type": {
+    "total": 245,
+    "sample": [
+      {
+        "id": "49127",
+        "slug": "1-bare-bright-copper-wire",
+        "title": "#1 Bare Bright Copper Wire",
+        "status": "publish"
+      },
+      {
+        "id": "49128",
+        "slug": "1-copper-tubing",
+        "title": "#1 Copper Tubing",
+        "status": "publish"
+      },
+      {
+        "id": "49129",
+        "slug": "1-flashing-copper",
+        "title": "#1 Flashing Copper",
+        "status": "publish"
+      },
+      {
+        "id": "49130",
+        "slug": "1-heavy-melting-steel",
+        "title": "#1 Heavy Melting Steel",
+        "status": "publish"
+      },
+      {
+        "id": "49131",
+        "slug": "1-hms",
+        "title": "#1 HMS",
+        "status": "publish"
+      },
+      {
+        "id": "49132",
+        "slug": "1-prepared",
+        "title": "#1 Prepared",
+        "status": "publish"
+      },
+      {
+        "id": "49133",
+        "slug": "1-steel",
+        "title": "#1 Steel",
+        "status": "publish"
+      },
+      {
+        "id": "49134",
+        "slug": "2-copper-tubing",
+        "title": "#2 Copper Tubing",
+        "status": "publish"
+      },
+      {
+        "id": "49135",
+        "slug": "2-heavy-melting-steel",
+        "title": "Heavy Melting Steel",
+        "status": "publish"
+      },
+      {
+        "id": "49136",
+        "slug": "2-hms",
+        "title": "HMS 2",
+        "status": "publish"
+      },
+      {
+        "id": "49137",
+        "slug": "2-prepared",
+        "title": "#2 Prepared Steel",
+        "status": "publish"
+      },
+      {
+        "id": "49138",
+        "slug": "2-3-mix-copper",
+        "title": "2/3 Mix Copper",
+        "status": "publish"
+      },
+      {
+        "id": "49139",
+        "slug": "3-copper-with-tar",
+        "title": "Copper with Tar",
+        "status": "publish"
+      },
+      {
+        "id": "49140",
+        "slug": "3-roofing-copper",
+        "title": "#3 Roofing Copper",
+        "status": "publish"
+      },
+      {
+        "id": "49141",
+        "slug": "17-4-stainless-steel",
+        "title": "17-4 Stainless Steel",
+        "status": "publish"
+      }
+    ]
+  },
+  "ignore_listingpro_data": {
+    "note": "post_type='listing' is leftover ListingPro data: 100% agriculture/livestock businesses (veterinary clinics, butcher shops, livestock haulers). DO NOT MIGRATE.",
+    "listing_posts_total": 3090,
+    "listing_byStatus": {
+      "publish": 3083,
+      "expired": 1,
+      "pending": 6
+    }
+  },
+  "postmeta": {
+    "total_rows": 47016,
+    "top_meta_keys": [
+      [
+        "_wp_page_template",
+        11370
+      ],
+      [
+        "_adv_ads",
+        8331
+      ],
+      [
+        "lp_listingpro_options",
+        3104
+      ],
+      [
+        "post_views_count",
+        3084
+      ],
+      [
+        "fave_agents",
+        3064
+      ],
+      [
+        "fave_property_map_address",
+        3064
+      ],
+      [
+        "fave_property_location",
+        3064
+      ],
+      [
+        "_yoast_wpseo_metadesc",
+        1571
+      ],
+      [
+        "_yoast_wpseo_focuskw_text_input",
+        1511
+      ],
+      [
+        "_wp_old_date",
+        1145
+      ],
+      [
+        "_wp_attached_file",
+        784
+      ],
+      [
+        "_wp_attachment_metadata",
+        782
+      ],
+      [
+        "_edit_lock",
+        375
+      ],
+      [
+        "_edit_last",
+        345
+      ],
+      [
+        "_kad_post_content_style",
+        277
+      ],
+      [
+        "_kad_post_vertical_padding",
+        277
+      ],
+      [
+        "_kad_post_layout",
+        277
+      ],
+      [
+        "_kad_post_transparent",
+        276
+      ],
+      [
+        "_kad_post_title",
+        273
+      ],
+      [
+        "_metaseo_metadesc",
+        252
+      ],
+      [
+        "metal_price",
+        245
+      ],
+      [
+        "last_update",
+        245
+      ],
+      [
+        "_yoast_wpseo_content_score",
+        226
+      ],
+      [
+        "wp-smpro-smush-data",
+        218
+      ],
+      [
+        "_yoast_wpseo_estimated-reading-time-minutes",
+        206
+      ],
+      [
+        "siteground_optimizer_is_optimized",
+        201
+      ],
+      [
+        "_yoast_wpseo_wordproof_timestamp",
+        200
+      ],
+      [
+        "litespeed-optimize-set",
+        180
+      ],
+      [
+        "_wp_attachment_image_alt",
+        136
+      ],
+      [
+        "_thumbnail_id",
+        105
+      ],
+      [
+        "_kadence_starter_templates_imported_post",
+        84
+      ],
+      [
+        "siteground_optimizer_optimization_attempts",
+        72
+      ],
+      [
+        "_shortpixel_status",
+        61
+      ],
+      [
+        "_wp_desired_post_slug",
+        59
+      ],
+      [
+        "_yoast_wpseo_title",
+        47
+      ],
+      [
+        "_kad_post_feature",
+        46
+      ],
+      [
+        "_kad_blocks_custom_css",
+        45
+      ],
+      [
+        "_kad_blocks_head_custom_js",
+        45
+      ],
+      [
+        "_kad_blocks_body_custom_js",
+        45
+      ],
+      [
+        "_kad_blocks_footer_custom_js",
+        45
+      ]
+    ]
+  },
+  "redirects": {
+    "total": 42,
+    "byStatus": {
+      "enabled": 42
+    },
+    "sample": [
+      {
+        "id": "1",
+        "url": "/tractor-implements-list/",
+        "match_url": "/tractor-implements-list",
+        "match_data": null,
+        "regex": "0",
+        "position": "0",
+        "last_count": "339",
+        "last_access": "2023-11-18 19:01:31",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/tractor-implements-list/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "2",
+        "url": "/simmental-cattle/",
+        "match_url": "/simmental-cattle",
+        "match_data": null,
+        "regex": "0",
+        "position": "1",
+        "last_count": "397",
+        "last_access": "2023-11-18 16:55:20",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/simmental-cattle/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "3",
+        "url": "/types-of-livestock-farming/",
+        "match_url": "/types-of-livestock-farming",
+        "match_data": null,
+        "regex": "0",
+        "position": "2",
+        "last_count": "104",
+        "last_access": "2023-11-18 19:00:44",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/types-of-livestock-farming/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "4",
+        "url": "/pork-processing/",
+        "match_url": "/pork-processing",
+        "match_data": null,
+        "regex": "0",
+        "position": "3",
+        "last_count": "163",
+        "last_access": "2023-11-17 20:30:02",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/pork-processing/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "5",
+        "url": "/pastoral-farming/",
+        "match_url": "/pastoral-farming",
+        "match_data": null,
+        "regex": "0",
+        "position": "4",
+        "last_count": "118",
+        "last_access": "2023-11-18 19:00:45",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/pastoral-farming/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "6",
+        "url": "/tractor-size-100-acres/",
+        "match_url": "/tractor-size-100-acres",
+        "match_data": null,
+        "regex": "0",
+        "position": "5",
+        "last_count": "246",
+        "last_access": "2023-11-18 19:00:46",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/tractor-size-100-acres/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "7",
+        "url": "/combine-cost/",
+        "match_url": "/combine-cost",
+        "match_data": null,
+        "regex": "0",
+        "position": "6",
+        "last_count": "370",
+        "last_access": "2023-11-18 19:00:48",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/combine-cost/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "8",
+        "url": "/custom-harvesting-companies-list/",
+        "match_url": "/custom-harvesting-companies-list",
+        "match_data": null,
+        "regex": "0",
+        "position": "7",
+        "last_count": "247",
+        "last_access": "2023-11-18 19:00:47",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/custom-harvesting-companies-list/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "9",
+        "url": "/3-point-hitch/",
+        "match_url": "/3-point-hitch",
+        "match_data": null,
+        "regex": "0",
+        "position": "8",
+        "last_count": "539",
+        "last_access": "2023-11-18 19:34:47",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/3-point-hitch/",
+        "match_type": "url",
+        "title": null
+      },
+      {
+        "id": "10",
+        "url": "/tractor-implement-questions/",
+        "match_url": "/tractor-implement-questions",
+        "match_data": null,
+        "regex": "0",
+        "position": "9",
+        "last_count": "121",
+        "last_access": "2023-11-18 19:01:47",
+        "group_id": "1",
+        "status": "enabled",
+        "action_type": "url",
+        "action_code": "301",
+        "action_data": "https://scrapyards.io/blog/tractor-implement-questions/",
+        "match_type": "url",
+        "title": null
+      }
+    ]
+  }
+}

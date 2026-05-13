@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-09T08:27:53.069Z",
+  "counts": {
+    "posts_input": 13082,
+    "not_gd_place": 4786,
+    "not_publish": 0,
+    "pd_missing": 0,
+    "pd_not_publish": 0,
+    "pd_dummy": 0,
+    "country_not_us": 0,
+    "no_state_match": 0,
+    "no_city": 0,
+    "no_address_no_geo": 0,
+    "closed_permanently": 0,
+    "closed_title": 0,
+    "closed_expired": 0,
+    "yards_pre_dedupe": 8296,
+    "yards_dedup_winners": 7722,
+    "yards_dedup_losers": 574,
+    "address_disambiguated": 108,
+    "zip_disambiguated": 3,
+    "postid_disambiguated": 0
+  },
+  "city_count": 3493,
+  "yard_count": 7722,
+  "skipped_count": 4786
+}

@@ -1,0 +1,5 @@
+# Disable inherited mod_rewrite rules from parent /public_html (WordPress leftover).
+# Passenger handles all routing for this Next.js app.
+<IfModule mod_rewrite.c>
+    RewriteEngine Off
+</IfModule>

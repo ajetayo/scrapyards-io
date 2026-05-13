@@ -1,0 +1,402 @@
+[
+  {
+    "yard_id": 6106,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 3121,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 4362,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 2531,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 5704,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 2019,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 5475,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 3275,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 3732,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 3752,
+    "cohort": "gsc-top-traffic"
+  },
+  {
+    "yard_id": 1970,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2081,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 3373,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 1994,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2184,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 381,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 5959,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 348,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 5611,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 2213,
+    "cohort": "specialized-name"
+  },
+  {
+    "yard_id": 7024,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 6918,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 6762,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 2176,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 27,
+    "cohort": "top-state-TX"
+  },
+  {
+    "yard_id": 1164,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 7716,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 7609,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 7531,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 367,
+    "cohort": "top-state-CA"
+  },
+  {
+    "yard_id": 6095,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 1457,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 550,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 6218,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 2327,
+    "cohort": "top-state-PA"
+  },
+  {
+    "yard_id": 7233,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 7374,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 2419,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 7318,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 7227,
+    "cohort": "top-state-FL"
+  },
+  {
+    "yard_id": 363,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 610,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 833,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 1283,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 2113,
+    "cohort": "top-state-OH"
+  },
+  {
+    "yard_id": 1950,
+    "cohort": "low-state-WY"
+  },
+  {
+    "yard_id": 594,
+    "cohort": "low-state-WY"
+  },
+  {
+    "yard_id": 3023,
+    "cohort": "low-state-VT"
+  },
+  {
+    "yard_id": 1667,
+    "cohort": "low-state-VT"
+  },
+  {
+    "yard_id": 3035,
+    "cohort": "low-state-AK"
+  },
+  {
+    "yard_id": 3045,
+    "cohort": "low-state-AK"
+  },
+  {
+    "yard_id": 3060,
+    "cohort": "low-state-ND"
+  },
+  {
+    "yard_id": 3053,
+    "cohort": "low-state-ND"
+  },
+  {
+    "yard_id": 3091,
+    "cohort": "low-state-SD"
+  },
+  {
+    "yard_id": 943,
+    "cohort": "low-state-SD"
+  },
+  {
+    "yard_id": 1700,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1559,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 890,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 245,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1019,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 2766,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 595,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 762,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 580,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1593,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1583,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1021,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1632,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 4030,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 510,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1677,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 1173,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 996,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 6649,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 2944,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 929,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 959,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 659,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 686,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 691,
+    "cohort": "full-data"
+  },
+  {
+    "yard_id": 5329,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4612,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4897,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5242,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5430,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4527,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6401,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 1195,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3125,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4964,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4843,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6451,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 1467,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6067,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 134,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 2670,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5268,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4082,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5797,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5011,
+    "cohort": "sparse-data"
+  }
+]

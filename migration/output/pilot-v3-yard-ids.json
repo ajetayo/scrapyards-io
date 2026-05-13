@@ -1,0 +1,202 @@
+[
+  {
+    "yard_id": 1455,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 4178,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 5679,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 1983,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 7529,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 3909,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 1551,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 6393,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 6162,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 7625,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 4671,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 7064,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 7110,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 830,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 6675,
+    "cohort": "name-stopword"
+  },
+  {
+    "yard_id": 6770,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 889,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6367,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 119,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6184,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4778,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4392,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 7639,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4259,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3352,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6415,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4189,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3813,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6889,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6927,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 158,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 4503,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 6409,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 1822,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 2199,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 4261,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 4487,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 4494,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 2160,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 4551,
+    "cohort": "saint-county"
+  },
+  {
+    "yard_id": 1027,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 6920,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 7287,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 2183,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 1175,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 6311,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 840,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 7539,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 7285,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 5820,
+    "cohort": "random"
+  }
+]

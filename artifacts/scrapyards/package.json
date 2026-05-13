@@ -1,0 +1,29 @@
+{
+  "name": "@workspace/scrapyards",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port $PORT",
+    "build": "next build",
+    "start": "next start --port $PORT",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "mapbox-gl": "^3.23.1",
+    "next": "^15.3.2",
+    "pg": "^8.20.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^3.5.0",
+    "@types/node": "catalog:",
+    "@types/pg": "^8.18.0",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "^5.9.2"
+  }
+}

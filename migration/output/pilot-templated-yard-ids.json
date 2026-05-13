@@ -1,0 +1,82 @@
+[
+  {
+    "yard_id": 5017,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4887,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 4888,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 1388,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 6983,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 5661,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 369,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 7154,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 1505,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3968,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3031,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 7563,
+    "cohort": "sparse-data"
+  },
+  {
+    "yard_id": 3550,
+    "cohort": "with-data"
+  },
+  {
+    "yard_id": 629,
+    "cohort": "with-data"
+  },
+  {
+    "yard_id": 5408,
+    "cohort": "with-data"
+  },
+  {
+    "yard_id": 1574,
+    "cohort": "with-data"
+  },
+  {
+    "yard_id": 2391,
+    "cohort": "with-data"
+  },
+  {
+    "yard_id": 3492,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 168,
+    "cohort": "random"
+  },
+  {
+    "yard_id": 4713,
+    "cohort": "random"
+  }
+]

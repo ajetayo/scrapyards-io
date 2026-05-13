@@ -1,0 +1,35 @@
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "seed-scrapyards": "tsx ./src/seed-scrapyards.ts",
+    "seed-items": "tsx ./src/seed-items.ts",
+    "smoke-test-redirects": "tsx ./src/smoke-test-redirects.ts",
+    "smoke-test-gsc": "tsx ./src/smoke-test-gsc.ts",
+    "test-slug-normalization": "tsx ./src/test-slug-normalization.ts",
+    "generate-yard-descriptions": "tsx ./src/generate-yard-descriptions.ts",
+    "generate-yard-descriptions-templated": "tsx ./src/generate-yard-descriptions-templated.ts",
+    "retro-validate-v1": "tsx ./src/retro-validate-v1.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "yard-desc-templated-coverage-check": "tsx ./src/yard-desc-templated-coverage-check.ts",
+    "city-enrichment-report": "tsx ./src/city-enrichment-report.ts",
+    "generate-city-descriptions": "tsx ./src/generate-city-descriptions.ts",
+    "city-desc-templated-coverage-check": "tsx ./src/city-desc-templated-coverage-check.ts",
+    "generate-metal-content": "tsx ./src/generate-metal-content.ts",
+    "metal-content-coverage-check": "tsx ./src/metal-content-coverage-check.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.1",
+    "@workspace/db": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/pg": "^8.18.0",
+    "tsx": "catalog:"
+  }
+}
