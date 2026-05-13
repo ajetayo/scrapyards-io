@@ -42,7 +42,22 @@ export async function getConsent(): Promise<ConsentValue> {
   return undefined;
 }
 
+// Common crawler/bot UAs. Conservative list — covers Googlebot, Bingbot,
+// social previewers, AdsBot, monitoring/uptime services. We never fire
+// analytics/ads markup for these to (a) keep crawl budget clean, (b) avoid
+// inflating GA traffic numbers, (c) not require consent decisions for
+// non-human traffic.
+const BOT_UA_RE =
+  /bot|crawler|spider|crawling|facebookexternalhit|slurp|bingpreview|duckduckbot|baiduspider|yandex|sogou|exabot|ia_archiver|adsbot|mediapartners|petalbot|semrush|ahrefs|mj12bot|dotbot|pingdom|uptimerobot|gtmetrix|lighthouse|headlesschrome|chrome-lighthouse|google-pagespeed/i;
+
+export async function isBot(): Promise<boolean> {
+  const h = await headers();
+  const ua = h.get("user-agent") ?? "";
+  return BOT_UA_RE.test(ua);
+}
+
 export async function shouldFireTracking(): Promise<boolean> {
+  if (await isBot()) return false;
   const [region, gpc, consent] = await Promise.all([getRegion(), getGpc(), getConsent()]);
   if (consent === "all") return true;
   if (consent === "essential") return false;

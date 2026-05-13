@@ -40,7 +40,15 @@ const COUNTRY_HEADERS = [
 export async function determineRegion(request: NextRequest): Promise<RegionDecision> {
   const gpc = request.headers.get("sec-gpc") === "1";
 
-  // 1. Dev override (non-production only)
+  // 1. GPC is a legally meaningful user signal — it overrides everything
+  //    else (dev override, cookie, geo). The user is explicitly asking to
+  //    opt out of sale/sharing, so we treat them as opt-out region (footer
+  //    bar UX, tracking blocked by default).
+  if (gpc) {
+    return { region: "opt-out", gpc, source: "gpc" };
+  }
+
+  // 2. Dev override (non-production only)
   if (process.env.NODE_ENV !== "production") {
     const override = request.nextUrl.searchParams.get("region");
     if (override === "opt-in" || override === "opt-out") {
@@ -48,15 +56,10 @@ export async function determineRegion(request: NextRequest): Promise<RegionDecis
     }
   }
 
-  // 2. Cached cookie
+  // 3. Cached cookie
   const cookieVal = request.cookies.get(REGION_COOKIE)?.value;
   if (cookieVal === "opt-in" || cookieVal === "opt-out") {
     return { region: cookieVal, gpc, source: "cookie" };
-  }
-
-  // 3. GPC short-circuit: skip geo lookup entirely
-  if (gpc) {
-    return { region: "opt-out", gpc, source: "gpc" };
   }
 
   // 4. Edge-provided country header

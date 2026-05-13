@@ -73,7 +73,7 @@ _Populate as you build — explicit user instructions worth remembering across s
 - **Result loaded into `public`:** 51 states, 9 metal_categories, 22 metals, 3,493 cities, 7,722 active yards, 8,989 legacy_redirects, 0 unverified/closed yards
 - **Top 5 states by yard count:** TX 609, CA 505, PA 461, FL 452, OH 430
 - **Click-weighted yard-level redirect resolution:** 77.8% (vs ~45% pre-fix; smoke-tested against 50 random GSC URLs)
-- **Slug normalization rules in middleware** (`app/api/legacy-redirect/route.ts::tryNormalize`, called by `src/middleware.ts`):
+- **Slug normalization rules in middleware** (`app/api/legacy-redirect/route.ts::tryNormalize`, called by `middleware.ts`):
   1. State alias map (9 entries — `delaware-2`, `indiana-1`, `kansas-1`, `michigan-1`, `nevada-2`, `north-dakota-1`, `south-dakota-1`, `virginia-2`, `washington-7`); other `-N` state slugs are NOT stripped.
   2. City segment: always strip `/-\d+$/`.
   3. Yard slug: strip `/-\d+$/` only if the cleaned slug exists for that (state, city); otherwise keep the suffix.

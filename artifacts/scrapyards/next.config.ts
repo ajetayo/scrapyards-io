@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
       // /blog/metal/:metal/ → /scrap-metal-prices/:metal/ removed —
       // unconditional rewrite produced 404s for unknown grades (e.g. kovar,
       // 2-prepared). DB-backed legacy_redirects handles validated cases;
-      // middleware fallback (see src/middleware.ts) catches the rest by
+      // middleware fallback (see middleware.ts) catches the rest by
       // redirecting unmatched /blog/metal/* paths to the hub.
       {
         source: "/scrap-prices/",

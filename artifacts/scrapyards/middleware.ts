@@ -5,7 +5,7 @@ import {
   GPC_HEADER,
   REGION_COOKIE_NAME,
   REGION_COOKIE_MAX_AGE,
-} from "../lib/consent/region-from-request";
+} from "./lib/consent/region-from-request";
 
 export async function middleware(request: NextRequest) {
   // 1. Strip ?sort_by=* → 301
@@ -54,6 +54,9 @@ export async function middleware(request: NextRequest) {
   if (decision.gpc) requestHeaders.set(GPC_HEADER, "1");
 
   const response = NextResponse.next({ request: { headers: requestHeaders } });
+  // Expose region on the response so clients (and curl-based smoke tests)
+  // can see what was decided without parsing HTML.
+  response.headers.set(REGION_HEADER, decision.region);
 
   // Only refresh the cookie when we just resolved (avoid rewriting on every
   // request that already has the cookie).
