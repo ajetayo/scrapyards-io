@@ -1,20 +1,23 @@
+/**
+ * Server-rendered Google Analytics + AdSense bootstrap.
+ *
+ * Fires when shouldFireTracking() returns true:
+ *   - sy_consent='all' (any region) → fire
+ *   - sy_consent unset, region='opt-out', no GPC → fire (US default)
+ *   - everything else (opt-in default, GPC, 'essential') → render nothing
+ */
 import Script from "next/script";
-import { cookies } from "next/headers";
+import { shouldFireTracking } from "../../lib/consent/server";
 
 const GA_ID = "G-8NB364QEGZ";
 const ADSENSE_CLIENT = "ca-pub-4183031888320028";
 
 export async function Analytics() {
-  const c = await cookies();
-  const consent = c.get("sy_consent")?.value;
-  if (consent !== "all") return null;
+  if (!(await shouldFireTracking())) return null;
 
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="afterInteractive"
-      />
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
       <Script id="ga-init" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

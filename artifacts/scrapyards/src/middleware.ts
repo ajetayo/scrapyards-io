@@ -1,4 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import {
+  determineRegion,
+  REGION_HEADER,
+  GPC_HEADER,
+  REGION_COOKIE_NAME,
+  REGION_COOKIE_MAX_AGE,
+} from "../lib/consent/region-from-request";
 
 export async function middleware(request: NextRequest) {
   // 1. Strip ?sort_by=* → 301
@@ -10,7 +17,7 @@ export async function middleware(request: NextRequest) {
 
   const path = request.nextUrl.pathname;
 
-  // 2. DB-backed legacy redirect fallback
+  // 2. DB-backed legacy redirect fallback (returns early without geo work)
   try {
     const apiUrl = new URL("/api/legacy-redirect/", request.url);
     const search = request.nextUrl.search ?? "";
@@ -32,14 +39,35 @@ export async function middleware(request: NextRequest) {
     // fall through
   }
 
-  // 3. Catch-all fallback for legacy /blog/metal/* paths whose grade slug
-  // doesn't exist in the DB (e.g. /blog/metal/kovar/). Without this they
-  // 404; instead, send users to the metal-prices hub.
+  // 3. Catch-all fallback for legacy /blog/metal/* paths
   if (/^\/blog\/metal\//.test(path)) {
     return NextResponse.redirect(new URL("/scrap-metal-prices/", request.url), 301);
   }
 
-  return NextResponse.next();
+  // 4. Region detection — sets x-consent-region request header for SSR
+  //    and stashes a 1-hour sy_region cookie so subsequent requests skip
+  //    the network lookup entirely.
+  const decision = await determineRegion(request);
+
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set(REGION_HEADER, decision.region);
+  if (decision.gpc) requestHeaders.set(GPC_HEADER, "1");
+
+  const response = NextResponse.next({ request: { headers: requestHeaders } });
+
+  // Only refresh the cookie when we just resolved (avoid rewriting on every
+  // request that already has the cookie).
+  if (decision.source !== "cookie") {
+    response.cookies.set({
+      name: REGION_COOKIE_NAME,
+      value: decision.region,
+      maxAge: REGION_COOKIE_MAX_AGE,
+      path: "/",
+      sameSite: "lax",
+    });
+  }
+
+  return response;
 }
 
 export const config = {

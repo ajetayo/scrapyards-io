@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
-import { Suspense } from "react";
 import "./globals.css";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { CookieBanner } from "./_components/CookieBanner";
+import { ConsentSlot } from "./_components/consent/ConsentSlot";
 import { Analytics } from "./_components/Analytics";
+import { getRegion } from "../lib/consent/server";
 
 export const metadata: Metadata = {
   title: { default: "Scrapyards.io — Find Scrap Yards & Prices Near You", template: "%s | Scrapyards.io" },
@@ -17,9 +17,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const hdrs = await headers();
   const ua = hdrs.get("user-agent") ?? "";
   const isBot = BOT_RE.test(ua);
+  const region = await getRegion();
 
   return (
-    <html lang="en">
+    <html lang="en" data-sy-region={region}>
       <body>
         <header style={{ background: "var(--color-surface)", borderBottom: "1px solid var(--color-border)", padding: "0.75rem 0" }}>
           <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -39,6 +40,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <a href="/about/">About</a>
               <a href="/contact/">Contact</a>
               <a href="/privacy/">Privacy</a>
+              {region === "opt-out" && (
+                <a href="/privacy/do-not-sell/">Do Not Sell or Share My Info</a>
+              )}
               <a href="/terms/">Terms</a>
             </nav>
             <p>© {new Date().getFullYear()} Scrapyards.io — Find scrap yards and current metal prices across the US.</p>
@@ -49,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             </p>
           </div>
         </footer>
-        {!isBot && <Suspense fallback={null}><CookieBanner /></Suspense>}
+        {!isBot && <ConsentSlot />}
         <Analytics />
       </body>
     </html>

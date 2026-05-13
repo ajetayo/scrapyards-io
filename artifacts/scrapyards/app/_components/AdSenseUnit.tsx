@@ -1,5 +1,19 @@
 "use client";
 
+/**
+ * Region-aware AdSense slot.
+ *
+ * Reads:
+ *   - sy_consent cookie ('all' | 'essential' | unset)
+ *   - data-sy-region attribute on <html> (set by RootLayout from middleware)
+ *
+ * Fires (i.e. renders the <ins> + push) when:
+ *   - consent === 'all' OR
+ *   - consent unset AND region === 'opt-out' AND no GPC
+ *
+ * Returns null in all other cases — no ad markup leaks to non-consenting
+ * users.
+ */
 import { useEffect, useRef, useState } from "react";
 
 const ADSENSE_CLIENT = "ca-pub-4183031888320028";
@@ -10,10 +24,31 @@ declare global {
   }
 }
 
-function hasAdConsent(): boolean {
-  if (typeof document === "undefined") return false;
+function readConsent(): "all" | "essential" | null {
+  if (typeof document === "undefined") return null;
   const m = document.cookie.match(/(?:^|;\s*)sy_consent=([^;]+)/);
-  return m ? decodeURIComponent(m[1]) === "all" : false;
+  if (!m) return null;
+  const v = decodeURIComponent(m[1]);
+  return v === "all" || v === "essential" ? v : null;
+}
+
+function readRegion(): "opt-in" | "opt-out" {
+  if (typeof document === "undefined") return "opt-in";
+  return document.documentElement.dataset.syRegion === "opt-out" ? "opt-out" : "opt-in";
+}
+
+function readGpc(): boolean {
+  if (typeof navigator === "undefined") return false;
+  // Spec: navigator.globalPrivacyControl is the standard browser exposure.
+  return Boolean((navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl);
+}
+
+function shouldFire(): boolean {
+  const consent = readConsent();
+  if (consent === "all") return true;
+  if (consent === "essential") return false;
+  if (readGpc()) return false;
+  return readRegion() === "opt-out";
 }
 
 export function AdSenseUnit({
@@ -31,7 +66,7 @@ export function AdSenseUnit({
   const pushed = useRef(false);
 
   useEffect(() => {
-    setEnabled(hasAdConsent());
+    setEnabled(shouldFire());
   }, []);
 
   useEffect(() => {
