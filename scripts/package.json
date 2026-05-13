@@ -19,7 +19,9 @@
     "generate-city-descriptions": "tsx ./src/generate-city-descriptions.ts",
     "city-desc-templated-coverage-check": "tsx ./src/city-desc-templated-coverage-check.ts",
     "generate-metal-content": "tsx ./src/generate-metal-content.ts",
-    "metal-content-coverage-check": "tsx ./src/metal-content-coverage-check.ts"
+    "metal-content-coverage-check": "tsx ./src/metal-content-coverage-check.ts",
+    "generate-category-content": "tsx ./src/generate-category-content.ts",
+    "category-content-coverage-check": "tsx ./src/category-content-coverage-check.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.1",

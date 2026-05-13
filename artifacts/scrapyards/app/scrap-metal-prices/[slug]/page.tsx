@@ -17,6 +17,13 @@ export const dynamicParams = true;
 
 type Props = { params: Promise<{ slug: string }> };
 
+// NOTE on slug shadowing: this resolver checks `metal_categories` BEFORE
+// `metals`, so a category slug always wins over a same-named grade slug.
+// Do NOT add a new category whose slug collides with an existing grade slug
+// (e.g. don't introduce a `stainless-steel` or `cast-iron` category — those
+// are grades inside the `steel` category and would silently shadow the grade
+// page). If you must introduce such a slug, rename the grade or pick a
+// distinct category slug.
 async function resolveSlug(slug: string) {
   const [cat] = await db.select().from(metalCategoriesTable).where(eq(metalCategoriesTable.slug, slug)).limit(1);
   if (cat) return { kind: "category" as const, category: cat };
@@ -54,7 +61,17 @@ export default async function MetalOrCategoryPage({ params }: Props) {
   return <MetalView metal={resolved.metal} slug={slug} />;
 }
 
-async function CategoryView({ category, slug }: { category: { slug: string; name: string; descriptionMd: string | null }; slug: string }) {
+type CategoryViewInput = {
+  slug: string;
+  name: string;
+  descriptionMd: string | null;
+  aboutMd: string | null;
+  marketDriversMd: string | null;
+  gradeComparisonMd: string | null;
+  faqJson: Array<{ q: string; a: string }> | null;
+};
+
+async function CategoryView({ category, slug }: { category: CategoryViewInput; slug: string }) {
   const [metalsInCat, states] = await Promise.all([
     db.select().from(metalsTable).where(eq(metalsTable.category, category.slug)).orderBy(metalsTable.displayOrder),
     db.select().from(statesTable).orderBy(statesTable.name),
@@ -114,10 +131,17 @@ async function CategoryView({ category, slug }: { category: { slug: string; name
         {metalsInCat.length} {category.name.toLowerCase()} grade{metalsInCat.length !== 1 ? "s" : ""} tracked. National averages updated daily.
       </p>
 
-      {category.descriptionMd && (
-        <div className="card" style={{ marginBottom: "1.5rem", lineHeight: 1.7 }}>
-          <p>{category.descriptionMd}</p>
-        </div>
+      {(category.aboutMd || category.descriptionMd) && (
+        <section className="card" style={{ marginBottom: "1.5rem", lineHeight: 1.7 }}>
+          {category.aboutMd ? (
+            <>
+              <h2 style={{ marginBottom: "0.75rem" }}>About {category.name}</h2>
+              <p style={{ marginBottom: 0 }}>{category.aboutMd}</p>
+            </>
+          ) : (
+            <p style={{ marginBottom: 0 }}>{category.descriptionMd}</p>
+          )}
+        </section>
       )}
 
       {metalsInCat.length > 0 ? (
@@ -148,6 +172,20 @@ async function CategoryView({ category, slug }: { category: { slug: string; name
         </div>
       )}
 
+      {category.marketDriversMd && (
+        <section className="card" style={{ marginBottom: "1.5rem" }}>
+          <h2 style={{ marginBottom: "0.75rem" }}>What drives the {category.name} market</h2>
+          <p style={{ lineHeight: 1.7, marginBottom: 0 }}>{category.marketDriversMd}</p>
+        </section>
+      )}
+
+      {category.gradeComparisonMd && (
+        <section className="card" style={{ marginBottom: "1.5rem" }}>
+          <h2 style={{ marginBottom: "0.75rem" }}>How {category.name} grades compare</h2>
+          <p style={{ lineHeight: 1.7, marginBottom: 0 }}>{category.gradeComparisonMd}</p>
+        </section>
+      )}
+
       <section className="card" style={{ marginBottom: "1.5rem" }}>
         <h2 style={{ marginBottom: "1rem" }}>{category.name} Prices by State</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "0.4rem" }}>
@@ -158,6 +196,34 @@ async function CategoryView({ category, slug }: { category: { slug: string; name
           ))}
         </div>
       </section>
+
+      {category.faqJson && category.faqJson.length > 0 && (
+        <section className="card" style={{ marginBottom: "1.5rem" }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: category.faqJson.map((p) => ({
+                  "@type": "Question",
+                  name: p.q,
+                  acceptedAnswer: { "@type": "Answer", text: p.a },
+                })),
+              }),
+            }}
+          />
+          <h2 style={{ marginBottom: "0.75rem" }}>Frequently asked about {category.name}</h2>
+          <dl style={{ marginBottom: 0 }}>
+            {category.faqJson.map((p, i) => (
+              <div key={i} style={{ marginBottom: i < category.faqJson!.length - 1 ? "1rem" : 0 }}>
+                <dt style={{ fontWeight: 600, marginBottom: "0.25rem" }}>{p.q}</dt>
+                <dd style={{ margin: 0, lineHeight: 1.7, color: "var(--color-text)" }}>{p.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
     </div>
   );
 }
