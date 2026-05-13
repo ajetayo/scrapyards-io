@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
   },
 
   serverExternalPackages: ["pg"],
-  allowedDevOrigins: ["*"],
+  allowedDevOrigins: ["*.replit.dev", "*.repl.co", "*.janeway.replit.dev", "*.replit.app"],
   trailingSlash: true,
 };
 
