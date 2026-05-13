@@ -14,7 +14,8 @@ function readConsent(): "all" | "essential" | null {
 }
 
 function setConsent(value: "all" | "essential") {
-  document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax`;
+  const secure = window.location.protocol === "https:" ? "; Secure" : "";
+  document.cookie = `${COOKIE_NAME}=${value}; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}`;
 }
 
 export function DoNotSellForm() {
@@ -29,6 +30,8 @@ export function DoNotSellForm() {
     setConsent("essential");
     setCurrent("essential");
     setSaved(true);
+    // Hard reload so server-rendered Analytics drops the GA/AdSense scripts.
+    setTimeout(() => window.location.reload(), 600);
   };
 
   const optIn = () => {

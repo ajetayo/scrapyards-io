@@ -106,6 +106,12 @@ export default async function PrivacyPage() {
         <li><code>sy_pv</code> (session) — short-term pageview counter used by the EU consent UX.</li>
       </ul>
       <p style={{ lineHeight: 1.7 }}>
+        Additional third-party cookies (e.g., <code>_ga</code>, <code>_ga_*</code>, <code>__gads</code>) are
+        set by Google Analytics and Google AdSense when those services load — that is, when you consent in
+        opt-in regions, or by default in opt-out regions. See the providers' privacy policies linked in
+        Section 4.
+      </p>
+      <p style={{ lineHeight: 1.7 }}>
         These cookies are essential for the Site's operation and your privacy choices. They do not require
         consent.
       </p>
@@ -132,6 +138,11 @@ export default async function PrivacyPage() {
           <strong>Global Privacy Control:</strong> regardless of region, if your browser sends the{" "}
           <code>Sec-GPC: 1</code> header, we honor it as a request to opt out — no analytics or advertising
           scripts load.
+        </li>
+        <li>
+          <strong>Do Not Track (DNT):</strong> we do not act on the deprecated Do Not Track (DNT) header,
+          which is no longer recognized as a privacy standard. To opt out, use GPC or the controls on the{" "}
+          <Link href="/privacy/do-not-sell/">Do Not Sell or Share</Link> page.
         </li>
         <li>
           <strong>Crawlers:</strong> we never load tracking or advertising scripts for known search-engine
@@ -209,7 +220,7 @@ export default async function PrivacyPage() {
         Control signal from your browser.
       </p>
 
-      <h2 style={{ marginTop: "2rem" }}>7. Your rights — California, Colorado, Connecticut, Utah, Virginia, and other US states</h2>
+      <h2 style={{ marginTop: "2rem" }}>7. Your rights — US residents in states with comprehensive privacy laws</h2>
       <p style={{ lineHeight: 1.7 }}>
         Depending on your state of residence, you may have the right to:
       </p>
@@ -224,9 +235,12 @@ export default async function PrivacyPage() {
       </ul>
       <p style={{ lineHeight: 1.7 }}>
         To exercise any of these rights other than opt-out (which works on the page above), email{" "}
-        <a href="mailto:hello@scrapyards.io">hello@scrapyards.io</a>. We will respond within 45 days
-        (extendable by another 45 days where permitted). We may need to verify your identity before fulfilling
-        the request.
+        <a href="mailto:hello@scrapyards.io">hello@scrapyards.io</a>. We will respond to requests under
+        California, Colorado, Connecticut, Utah, Virginia, Texas, Oregon, and other comprehensive US state
+        privacy laws within 45 days (extendable by an additional 45 days where permitted by law, with notice
+        to you). We may need to verify your identity before fulfilling the request. An authorized agent must
+        provide written authorization signed by you, and we may verify the agent's identity. We may also
+        contact you directly to confirm any agent-submitted request.
       </p>
 
       <h2 style={{ marginTop: "2rem" }}>8. Your rights — EEA, United Kingdom, Switzerland, and Brazil</h2>
@@ -247,7 +261,9 @@ export default async function PrivacyPage() {
         (b) <em>legitimate interests</em> for server logs, abuse prevention, and region detection (necessary
         to deliver the appropriate consent UX); and (c) <em>contract / pre-contract</em> for handling
         information you submit through the Site. To exercise any right, email{" "}
-        <a href="mailto:hello@scrapyards.io">hello@scrapyards.io</a>.
+        <a href="mailto:hello@scrapyards.io">hello@scrapyards.io</a>. We will respond to GDPR/UK GDPR/LGPD
+        requests within one month (extendable by two additional months for complex requests, with notice of
+        the extension).
       </p>
 
       <h2 style={{ marginTop: "2rem" }}>9. Data retention</h2>
@@ -268,9 +284,9 @@ export default async function PrivacyPage() {
 
       <h2 style={{ marginTop: "2rem" }}>11. Children's privacy</h2>
       <p style={{ lineHeight: 1.7 }}>
-        The Site is not directed to children under 13. We do not knowingly collect personal information from
-        children under 13. If you believe a child has provided us with personal information, please contact us
-        and we will promptly delete it.
+        The Site is not directed to children under 16. We do not knowingly collect or share personal
+        information from minors under 16. If you believe a child has provided us with personal information,
+        please contact us and we will promptly delete it.
       </p>
 
       <h2 style={{ marginTop: "2rem" }}>12. International data transfers</h2>
@@ -294,11 +310,12 @@ export default async function PrivacyPage() {
         or via our <Link href="/contact/">contact page</Link>.
       </p>
 
-      {/* Region badge — useful for QA, harmless for users */}
-      <p style={{ marginTop: "2.5rem", fontSize: "0.75rem", color: "var(--color-text-muted)" }}>
-        Detected region for this device: <code>{region}</code>. To override during dev, append{" "}
-        <code>?region=opt-in</code> or <code>?region=opt-out</code> to any URL (development only).
-      </p>
+      {process.env.NODE_ENV !== "production" && (
+        <p style={{ marginTop: "2.5rem", fontSize: "0.75rem", color: "var(--color-text-muted)" }}>
+          Detected region for this device: <code>{region}</code>. To override during dev, append{" "}
+          <code>?region=opt-in</code> or <code>?region=opt-out</code> to any URL (development only).
+        </p>
+      )}
     </div>
   );
 }
