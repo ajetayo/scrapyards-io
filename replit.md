@@ -334,3 +334,5 @@ architecture as `yard-desc-templates.ts`, $0 API cost, deterministic per-city
 ## Pointers
 
 - See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+
+
