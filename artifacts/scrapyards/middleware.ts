@@ -58,9 +58,12 @@ export async function middleware(request: NextRequest) {
   // can see what was decided without parsing HTML.
   response.headers.set(REGION_HEADER, decision.region);
 
-  // Only refresh the cookie when we just resolved (avoid rewriting on every
-  // request that already has the cookie).
-  if (decision.source !== "cookie") {
+  // Only persist when the decision came from a *real* live signal
+  // (GPC, edge header, successful geo lookup). Dev overrides and the
+  // safe-default `opt-in` fallback must NOT poison the cookie — that
+  // was the original bug where ?region=opt-in (or a single 250ms
+  // timeout) stuck for an hour and overrode accurate live detection.
+  if (decision.persist) {
     response.cookies.set({
       name: REGION_COOKIE_NAME,
       value: decision.region,

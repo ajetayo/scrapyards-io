@@ -19,7 +19,13 @@
 
 const TTL_MS = 24 * 60 * 60 * 1000;
 const MAX_ENTRIES = 10_000;
-const FETCH_TIMEOUT_MS = 250;
+// Bumped from 250ms → 1500ms. The previous value caused frequent
+// timeouts → safe-default `opt-in`, which used to get cached for an
+// hour in sy_region. With cookie now fallback-only, a missed lookup is
+// recoverable on the next request, but we still want the lookup to
+// succeed when possible. 1500ms aligns with the legacy-redirect
+// timeout already used elsewhere in middleware.
+const FETCH_TIMEOUT_MS = 1500;
 
 type Entry = { cc: string; expires: number };
 const cache: Map<string, Entry> = new Map();

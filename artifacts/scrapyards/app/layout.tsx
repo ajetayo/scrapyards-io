@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import "./globals.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { ConsentSlot } from "./_components/consent/ConsentSlot";
@@ -11,12 +10,10 @@ export const metadata: Metadata = {
   description: "Find scrap yards near you with current scrap metal prices, hours, and directions. Copper, aluminum, steel, and more.",
 };
 
-const BOT_RE = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandex|applebot|facebookexternalhit|twitterbot|linkedinbot/i;
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const hdrs = await headers();
-  const ua = hdrs.get("user-agent") ?? "";
-  const isBot = BOT_RE.test(ua);
+  // Bot-gating now lives inside ConsentSlot (single source of truth via
+  // lib/consent/server::isBot). Region is still read here for the
+  // "Do Not Sell" footer link, which only renders for opt-out regions.
   const region = await getRegion();
 
   return (
@@ -53,7 +50,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             </p>
           </div>
         </footer>
-        {!isBot && <ConsentSlot />}
+        <ConsentSlot />
         <Analytics />
       </body>
     </html>
